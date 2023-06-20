@@ -1,0 +1,174 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.content-wrapper {
+    width  : 100vw;
+    padding: 20px;
+}
+
+@media screen and (max-width:992px) {
+    .content-wrapper {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .content-wrapper {
+        margin-left: 90px;
+        width      : calc(100vw - 90px);
+    }
+}
+
+section {
+    width: 100%;
+}
+
+section:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+.article {
+    width          : 100%;
+    min-width      : 295px;
+    min-height     : 544px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+    border-radius  : 10px;
+    gap            : 20px;
+    padding        : 10px;
+    box-shadow     : .5px 3px 10px #00000060;
+}
+
+.home-article {
+    background: rgb(159, 239, 203);
+    background: -moz-linear-gradient(157deg, rgba(159, 239, 203, 1) 33%, rgba(254, 209, 209, 1) 72%);
+    background: -webkit-linear-gradient(157deg, rgba(159, 239, 203, 1) 33%, rgba(254, 209, 209, 1) 72%);
+    background: linear-gradient(157deg, rgb(204, 252, 229) 10%, rgba(159, 239, 203, 1) 23%, rgba(254, 209, 209, 1) 72%);
+}
+
+.home-article .boas-vindas {
+    font-size : 2.5em;
+    text-align: center;
+}
+
+.home-article .desc {
+    max-width : 80%;
+    text-align: center;
+    font-size : 1.2em;
+}
+
+
+.home-article .button-comecar {
+    width           : 140px;
+    height          : 50px;
+    background-color: #0b57d0;
+    color           : #fff;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    border-radius   : 50px;
+    font-size       : 1.3em;
+}
+
+.agua-article {
+    background: rgb(159, 214, 239);
+    background: -moz-linear-gradient(157deg, rgb(159, 180, 239) 33%, rgb(218, 254, 209) 72%);
+    background: -webkit-linear-gradient(157deg, rgb(159, 187, 239) 33%, rgb(209, 227, 254) 72%);
+    background: linear-gradient(157deg, rgb(204, 205, 252) 10%, rgb(159, 178, 239) 23%, rgb(231, 254, 209) 72%);
+}
+
+.agua-article .titulo {
+    font-size : 2.5em;
+    text-align: center;
+}
+
+.agua-article .desc {
+    max-width : 80%;
+    text-align: center;
+    font-size : 1.2em;
+}
+
+.agua-article .calculo {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-wrap      : wrap;
+    gap            : 20px;
+}
+
+.agua-article .calculo .calculo-item {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: center;
+    flex-direction : column;
+}
+
+
+.agua-article .calculo .calculo-item input {
+    height       : 30px;
+    border-radius: 3px;
+    border       : none;
+    outline      : 0;
+    padding      : 3px;
+}
+
+.agua-article .resultados {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-wrap      : wrap;
+    width          : 100%;
+    gap            : 10px;
+}
+
+.agua-article .resultados .modulo {
+    width        : calc((100%/3) - 10px);
+    min-width    : 200px;
+    height       : 230px;
+    border       : 1px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    padding      : 10px;
+}
+
+.agua-article .resultados .modulo .mod-titulo {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.agua-article .resultados .modulo .group-res {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: space-between;
+    flex-direction : column;
+    height         : 80%;
+    margin-top     : 10px;
+}
+
+.agua-article .button-calcular {
+    width           : 140px;
+    height          : 50px;
+    background-color: #0b57d0;
+    color           : #fff;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    border-radius   : 50px;
+    font-size       : 1.3em;
+    border          : none;
+}
+
+.agua-article .explicacao {
+    width: 100%;
+    padding: 10px;
+}
